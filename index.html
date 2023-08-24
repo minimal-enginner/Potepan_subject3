@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>電卓</title>
+ </head>
+ 
+ <body>
+   <div class="calculator">
+   <input id="result">
+   <div class="button">
+    <input type="button" id="n7" value="7" onclick="edit(this)">
+    <input type="button" id="n8" value="8" onclick="edit(this)">
+    <input type="button" id="n9" value="9" onclick="edit(this)">
+    <input type="button" id="plus" value="+" onclick="arithmetic(this)"><br>
+    <input type="button" id="n4" value="4" onclick="edit(this)">
+    <input type="button" id="n5" value="5" onclick="edit(this)">
+    <input type="button" id="n6" value="6" onclick="edit(this)">
+    <input type="button" id="minus" value="-" onclick="arithmetic(this)"><br>
+    <input type="button" id="n1" value="1" onclick="edit(this)">
+    <input type="button" id="n2" value="2" onclick="edit(this)">
+    <input type="button" id="n3" value="3" onclick="edit(this)">
+    <input type="button" id="multiplication" value="*" onclick="arithmetic(this)"><br>
+    <input type="button" id="n0" value="0" onclick="edit(this)">
+    <input type="button" id="n00" value="00" onclick="edit(this)">
+    <input type="button" id="period" value="." onclick="arithmetic(this)">
+    <input type="button" id="division" value="/" onclick="arithmetic(this)"><br>
+    <input type="button" id="AC" value="AC" onclick="update()">
+    <input type="button" id="equal" value="=" onclick="calc()"><br>
+   </div>
+ <script src="main.js"></script>
+ </body>
+ </html>
